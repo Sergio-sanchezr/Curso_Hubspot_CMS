@@ -1,0 +1,92 @@
+[ {
+  "id" : "20bbd9c5-8741-7c98-4872-3faa431dfca8",
+  "name" : "simplemenu_field",
+  "display_width" : null,
+  "label" : "Menú simple",
+  "required" : false,
+  "locked" : false,
+  "type" : "simplemenu",
+  "default" : [ ]
+}, {
+  "id" : "1b3e5db2-91e9-f336-45c4-73621ae62f11",
+  "name" : "color_field",
+  "display_width" : null,
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "7dc3b340-ba8e-877d-bcb1-acbe20f81657",
+    "controlling_value_regex" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "type" : "color",
+  "default" : {
+    "color" : "#6FA8DC",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7dc3b340-ba8e-877d-bcb1-acbe20f81657",
+  "name" : "text_field",
+  "display_width" : null,
+  "label" : "Texto",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Curso Hubspot"
+}, {
+  "id" : "29db384f-8788-10ae-c503-fca79a04656e",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Texto enriquecido",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Curso de Hubspot CMS</p>\n<p>Sergio Sánchez</p>"
+}, {
+  "id" : "7ae80690-931a-c145-9252-11bc0bdfa932",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://cdn2.hubspot.net/hubfs/22326062/2.png",
+    "alt" : "2",
+    "loading" : "lazy",
+    "width" : 389,
+    "height" : 388,
+    "max_width" : 389,
+    "max_height" : 388
+  }
+}, {
+  "id" : "0b702f07-9f8f-041e-3279-8d3e30ae5435",
+  "name" : "ssestilo",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "c1e55b8c-539b-dda2-f81b-50a9a5de1d78",
+  "name" : "tag_field",
+  "display_width" : null,
+  "label" : "Etiqueta",
+  "required" : false,
+  "locked" : false,
+  "tag_value" : "SLUG",
+  "type" : "tag"
+} ]

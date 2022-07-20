@@ -1,0 +1,36 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: sstema
+  screenshotPath: ../images/template-previews/sstema.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home"
+%}
+
+  {# Hero banner #}
+
+  {% include_dnd_partial path="../sections/ssbanner.html" %}
+
+  {# Two column image right #}
+
+  {% include_dnd_partial path="../sections/doble-columna.html" %}
+
+ 
+
+ 
+
+  {# Three column image with text #}
+
+  {% include_dnd_partial path="../sections/triple-columna.html" %}
+  {% include_dnd_partial path="../sections/triple-columna.html" %}
+
+{% end_dnd_area %}
+{% endblock body %}

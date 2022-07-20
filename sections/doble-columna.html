@@ -1,0 +1,32 @@
+<!--
+  templateType: section
+  label: Multi-row content
+  isAvailableForNewContent: true
+  screenshotPath: ../images/section-previews/multi-row-content.png
+  description: "Section separated in two columns. Left column has text and right column has an image."
+-->
+{% dnd_section
+  vertical_alignment="MIDDLE"
+%}
+  {% dnd_module
+    path="@hubspot/rich_text",
+    html={{ context.content || "<h2>Titulo</h2><p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>" }}
+    offset=0,
+    width=6
+  %}
+
+  {% end_dnd_module %}
+  {% dnd_module path="@hubspot/linked_image",
+    img={
+      "alt": context.image_alt || "Imagen Default",
+      "loading": context.image_loading || "disabled",
+      "max_height": context.image_height || 451,
+      "max_width": context.image_width || 605,
+      "size_type": "auto_custom_max",
+      "src": context.image || get_asset_url("../images/img-muestra.png")
+    },
+    offset=6,
+    width=6
+  %}
+  {% end_dnd_module %}
+{% end_dnd_section %}

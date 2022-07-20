@@ -1,0 +1,26 @@
+body {
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+
+
+
+/* Anchors */
+
+a {
+  cursor: grab;
+}
+
+
+h1{
+  border: none;
+
+}
+
+
+hr {
+  border: none;
+  border-bottom: 3px solid #fcfcfc;
+}
+
